@@ -1,0 +1,46 @@
+body{
+    margin:0;
+}
+*{
+    box-sizing: border-box;
+}
+.main{
+width:100%;
+height:100vh;
+background-color: rgb(45, 221, 245);
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.box1,.box2,.box3,.box4{
+width: 20px;
+height:20px;
+background-color: white;
+margin-top: 3px;
+margin-right: 3px;
+}
+.box1{
+    animation:bulge 2s ease-in-out 0.7s infinite;
+}
+.box2{
+    animation:bulge 2s ease-in-out 0.8 infinite;
+}
+.box3{
+    animation:bulge 2s ease-in-out 1.2 infinite;
+}
+.box4{
+    animation:bulge 2s ease-in-out 1.2s infinite;
+    
+}
+
+@keyframes bulge{
+    0%{
+        transform:scale(0);
+    }
+    50%{
+        transform:  scale(-1);
+    }
+    100%{
+        transform: scale(0);
+    }
+}
